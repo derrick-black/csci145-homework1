@@ -10,6 +10,8 @@ public class Player {
 
     }
 
+    public Player(){}
+
     public void onHit(int damage) {
 
     }
