@@ -1,2 +1,3 @@
 # csci145-homework1
- Homework 1
+Names: Derrick Black, Gavin Roberts
+About: This program is a dungeon.
