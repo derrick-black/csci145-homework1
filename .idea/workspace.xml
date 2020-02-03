@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7373462e-3c5c-451f-8602-5d1f91c35c22" name="Default Changelist" comment="" />
+    <list default="true" id="7373462e-3c5c-451f-8602-5d1f91c35c22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1XJ3XDg09hKz7nPW08yxyqa6Q5g" />
@@ -27,6 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -55,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580750407324</updated>
       <workItem from="1580750410762" duration="1230000" />
+      <workItem from="1580758525829" duration="59000" />
     </task>
     <servers />
   </component>
@@ -66,13 +72,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1580750432544" />
+    <state x="369" y="8" key="CommitChangelistDialog2" timestamp="1580758564025">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="369" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580758564025" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1580751630633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580751630633" />
-    <state x="209" y="33" key="new project wizard" timestamp="1580751639397">
+    <state x="209" y="33" key="new project wizard" timestamp="1580758582149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580751639397" />
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580758582149" />
   </component>
 </project>
