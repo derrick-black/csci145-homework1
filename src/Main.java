@@ -8,7 +8,7 @@ public class Main {
 	}
 	else if(args.length==2){
 		int w = int.parse(args[0]);
-		int h = int.parse(args[0]);
+		int h = int.parse(args[1]);
 		game = new DungeonGame(w,h);
 	}
 	else{
