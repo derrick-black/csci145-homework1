@@ -8,11 +8,9 @@ public class DungeonMap {
 
 
     public DungeonMap (int rows, int columns, Player player){
-        String playerClass;
         rooms = new Room[rows][columns];
         this.player = player;
-        playerClass = player.getPlayerClass();
-        switch(playerClass) {
+        switch(player.getPlayerClass()) {
             case "Warrior":
                 playerToken = 'W';
                 break;

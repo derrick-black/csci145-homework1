@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7373462e-3c5c-451f-8602-5d1f91c35c22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7373462e-3c5c-451f-8602-5d1f91c35c22" name="Default Changelist" comment="Fixed playerClass identification in DungeonMap.java, added breaks to switch in Room.java">
       <change beforePath="$PROJECT_DIR$/src/DungeonGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DungeonGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DungeonMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DungeonMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,22 +148,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580751630633" />
-    <state width="1342" height="242" key="GridCell.Tab.0.bottom" timestamp="1580781865358">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1580782822671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580781865358" />
-    <state width="1342" height="242" key="GridCell.Tab.0.center" timestamp="1580781865357">
+    <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580782822671" />
+    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1580782822671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580781865357" />
-    <state width="1342" height="242" key="GridCell.Tab.0.left" timestamp="1580781865357">
+    <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580782822671" />
+    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1580782822670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580781865357" />
-    <state width="1342" height="242" key="GridCell.Tab.0.right" timestamp="1580781865357">
+    <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580782822670" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1580782822671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580781865357" />
+    <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580782822671" />
     <state width="1342" height="242" key="GridCell.Tab.1.bottom" timestamp="1580781865358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -183,6 +180,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1342" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580781865358" />
+    <state x="506" y="124" key="RollbackChangesDialog" timestamp="1580782849100">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="506" y="124" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580782849100" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1580780276838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
