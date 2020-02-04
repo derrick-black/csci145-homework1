@@ -5,6 +5,7 @@ public class Player {
     private int damage;
     private String playerClass;
     private double lootModifier;
+    private int[] coordinates;
 
     public void attack(Monster target) {
 
@@ -24,6 +25,10 @@ public class Player {
 
     }
 
+    public void setCoordinates(int x, int y) {
+
+    }
+
     // accessor methods
 
     public int getHealth() {
@@ -36,5 +41,13 @@ public class Player {
 
     public String getPlayerClass() {
         return null;
+    }
+
+    public int getX() {
+        return 0;
+    }
+
+    public int getY() {
+        return 0;
     }
 }
