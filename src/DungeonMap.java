@@ -8,13 +8,17 @@ public class DungeonMap {
 
 
     public DungeonMap (int rows, int columns, Player player){
+        String playerClass;
         rooms = new Room[rows][columns];
         this.player = player;
-        switch(player.getPlayerClass()) {
+        playerClass = player.getPlayerClass();
+        switch(playerClass) {
             case "Warrior":
                 playerToken = 'W';
+                break;
             case "Thief":
                 playerToken = 'T';
+                break;
         }
     }
 
@@ -28,7 +32,7 @@ public class DungeonMap {
         for (int i = 0; i < rooms.length; i++) {
             System.out.print(WALL_MAP_POSITION);
             for (int j = 0; j < rooms[i].length; j++) {
-                if (player.getY() == i + 1 && player.getX() == j + 1) {
+                if (player.getY() == i && player.getX() == j) {
                     System.out.print(playerToken);
                 }
                 else {

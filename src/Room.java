@@ -58,9 +58,11 @@ public class Room {
                     if (player.getHealth() > 0) {
                         player.attack(foe);
                     }
+                    break;
                 case 2:
                     System.out.println("You try to run ...");
                     foe.escapeAttack(player);
+                    break;
             }
         }
 
