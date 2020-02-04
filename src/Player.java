@@ -23,4 +23,18 @@ public class Player {
     public void onLoot(int gold) {
 
     }
+
+    // accessor methods
+
+    public int getHealth() {
+        return 0;
+    }
+
+    public int getGold() {
+        return 0;
+    }
+
+    public String getPlayerClass() {
+        return null;
+    }
 }
