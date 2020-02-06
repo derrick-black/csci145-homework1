@@ -1,6 +1,8 @@
 # csci145-homework1
 Names: Derrick Black, Gavin Roberts, Evan Palm
 
+Due: February 16
+
 About: This program is a turn-based computer game. The player explores a dungeon, encountering monsters and finding loot. The player can choose from two different classes: warrior and thief. The warrior has higher damage and health, while the thief receives 20% more gold. 
 
 The player starts at the top-left corner of the dungeon. A map of the dungeon is displayed showing current location, walls, and visited rooms, as well as the current health and gold. They can move up, down, left, or right and can enter visited and unvisited rooms, but not walls.
