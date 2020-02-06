@@ -1,4 +1,6 @@
-
+// This class object represents a map of a dungeon for the DungeonGame class.
+// It contains an array of Room objects and keeps track of a Player object.
+// It also contains a method to create a visual representation of the map.
 public class DungeonMap {
     private Room[][] rooms;
     private Player player;

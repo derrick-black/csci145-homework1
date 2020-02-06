@@ -1,6 +1,8 @@
 import java.util.Random;
 import java.util.Scanner;
-
+// This class object represents a room in a DungeonMap
+// It tracks whether or not it has been visited and also runs an encounter when a player enters a room that
+// has not been visited.
 public class Room {
     private boolean visited;
 
