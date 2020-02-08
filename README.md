@@ -1,5 +1,5 @@
 # csci145-homework1
-Names: Derrick Black, Gavin Roberts
+Names: Derrick, Gavin, Evan 
 
 Due: February 16
 
