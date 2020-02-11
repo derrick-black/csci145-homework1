@@ -1,11 +1,41 @@
+import java.util.Random;
 
 public class Monster {
     private int health;
     private int damage;
     private String monsterType;
+    private int monsterChoice;
+
+    public Monster(){
+        Random choice_generator = new Random();
+        monsterChoice = choice_generator.nextInt(4);
+        switch(monsterChoice) {
+            case 0:
+                monsterType = "Deneke";
+                health = 55;
+                damage = 5;
+                break;
+            case 1:
+                monsterType = "Orc";
+                health = 18;
+                damage = 20;
+                break;
+            case 2:
+                monsterType = "Goblin";
+                health = 6;
+                damage = 10;
+                break;
+            case 3:
+                monsterType = "Zombie";
+                health = 12;
+                damage = 15;
+                break;
+        }
+    }
 
     public void attack(Player target) {
-
+        target.onHit(damage);
+        System.out.println("The " + monsterType + "deals " + damage + "damage to the player!");
     }
 
     public void escapeAttack(Player player) {
@@ -15,17 +45,17 @@ public class Monster {
     }
 
     public void onHit(int damage) {
-
+        health -= damage;
     }
 
     // accessor methods
 
     public String getType() {
-        return null;
+        return monsterType;
     }
 
     public int getHealth() {
-        return 0;
+        return health;
     }
 
 
