@@ -5,10 +5,10 @@ public class DungeonGame {
     private Player player;
 	private int width;
 	private int height;
+	private int x=0;
+	private int y=0;
 
     public DungeonGame(int width, int height){
-		player = new Player();
-		map = new DungeonMap(width,height,player);
 		this.width=width;
 		this.height=height;
     }
@@ -43,41 +43,42 @@ public class DungeonGame {
 		System.out.println("Select your class:\n[1] Warrior\n[2] Thief");
 		int playerClass = getInt(scan);
 		String[] classes = {"Warrior", "Thief"};
-		player.playerClass = classes[playerClass-1];
-		if(playerClass==1) {player.health=100; player.damage = 15; player.lootModifier=1d;}
-		else {player.health=75; player.damage = 10; player.lootModifier=1.2d;}
+		player = new Player(classes[playerClass-1]);
+		player.setCoordinates(x,y);
+		map = new DungeonMap(width,height,player);
 		boolean running=true;
 		while(running){
 			map.print();
-			System.out.println("GP = "+player.gold);
-			System.out.println("HP = "+player.health);
+			System.out.println("GP = "+player.getGold());
+			System.out.println("HP = "+player.getHealth());
 			boolean cantMove=false;
 			char choice;
 			do{
 				cantMove=false;
 				System.out.print("\nSelect a door: [W] up, [S] down, [A] left, [D] right ==> ");
 				choice = getChar(scan);
-				if(player.y==0 && choice=='w') cantMove=true;
-				if(player.y==height-1 && choice=='s') cantMove=true;
-				if(player.x==0 && choice=='a') cantMove=true;
-				if(player.x==width-1 && choice=='d') cantMove=true;
+				if(y==0 && choice=='w') cantMove=true;
+				if(y==height-1 && choice=='s') cantMove=true;
+				if(x==0 && choice=='a') cantMove=true;
+				if(x==width-1 && choice=='d') cantMove=true;
 				if(cantMove) System.out.println("There is a wall blocking your path.");
 			}while(cantMove);
 			if(choice=='w'){
-				player.y--;
+				y--;
 			}else if(choice=='s'){
-				player.y++;
+				y++;
 			}else if(choice=='a'){
-				player.x--;
+				x--;
 			}else if(choice=='d'){
-				player.x++;
+				x++;
 			}
+			player.setCoordinates(x,y);
 			map.enterRoom();
-			if(player.health<=0){
+			if(player.getHealth()<=0){
 				System.out.println("Your hp hit 0. You died.");
 				running=false;
 			}
-			if(player.gold>=100){
+			if(player.getGold()>=100){
 				System.out.println("You have successfully exited the dungeon. Congratulations!!");
 				running=false;
 			}
