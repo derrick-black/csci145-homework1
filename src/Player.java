@@ -1,4 +1,4 @@
-import java.awt.geom.Point2D;
+import java.awt.*;
 
 public class Player {
     private int health;
@@ -6,12 +6,11 @@ public class Player {
     private int damage;
     private String playerClass;
     private double lootModifier;
-    private Point2D coordinates;
+    private Point coordinates;
 
     public Player(String playerClass){
         gold = 0;
-        coordinates.setLocation(0,0);
-
+        coordinates = new Point (0, 0);
         switch(playerClass){
             case "Warrior":
                 health = 100;
@@ -75,9 +74,5 @@ public class Player {
 
     public int getY() {
         return (int)coordinates.getY();
-    }
-
-    public Point2D getPosition() {
-        return coordinates;
     }
 }
