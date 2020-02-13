@@ -84,8 +84,9 @@ public class DungeonGame {
     }
 
     private void playIntro() {
-    	System.out.println("Oh no! You've been captured by the nefarious evil professor and placed into his dungeon!");
+    	System.out.println("Oh no! You've been captured by the evil professor and awoken in his dungeon!");
     	System.out.println("To escape, you must find 100 gold before you run out of health to pay the doorman!");
-    	System.out.println("Good luck, adventurer!");
+    	System.out.println("In each room, you'll face monsters, loot gold, and recover from healing elixirs!");
+    	System.out.println("Good luck, adventurer!\n");
 	}
 }
