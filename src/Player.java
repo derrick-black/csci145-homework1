@@ -49,12 +49,6 @@ public class Player {
         }
     }
 
-
-
-    public void setCoordinates(int x, int y) {
-        coordinates.setLocation(x, y);
-    }
-
     public void setCoordinates(Point newPosition) {
         coordinates.setLocation(newPosition);
     }
@@ -79,9 +73,5 @@ public class Player {
 
     public int getY() {
         return (int)coordinates.getY();
-    }
-
-    public Point getCoordinates() {
-        return coordinates;
     }
 }

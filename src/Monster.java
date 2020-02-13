@@ -4,11 +4,10 @@ public class Monster {
     private int health;
     private int damage;
     private String monsterType;
-    private int monsterChoice;
 
     public Monster(){
         Random choice_generator = new Random();
-        monsterChoice = choice_generator.nextInt(4);
+        int monsterChoice = choice_generator.nextInt(4);
         switch(monsterChoice) {
             case 0:
                 monsterType = "Deneke";
