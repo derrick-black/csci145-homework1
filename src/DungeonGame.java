@@ -37,6 +37,7 @@ public class DungeonGame {
 	}
 
     public void play() {
+    	playIntro();
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Select your class:\n[1] Warrior\n[2] Thief");
 		int playerClass = getInt(scan);
@@ -81,4 +82,10 @@ public class DungeonGame {
 			}
 		}
     }
+
+    private void playIntro() {
+    	System.out.println("Oh no! You've been captured by the nefarious evil professor and placed into his dungeon!");
+    	System.out.println("To escape, you must find 100 gold before you run out of health to pay the doorman!");
+    	System.out.println("Good luck, adventurer!");
+	}
 }
