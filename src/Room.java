@@ -13,8 +13,9 @@ public class Room {
         if(!visited) {
             runEncounter(player);
             visited = true;
+        } else {
+            System.out.println("You have already visited this room...");
         }
-        System.out.println("You have already visited this room...");
     }
 
     // hasVisited

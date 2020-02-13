@@ -35,13 +35,12 @@ public class Monster {
 
     public void attack(Player target) {
         target.onHit(damage);
-        System.out.println("The " + monsterType + "deals " + damage + "damage to the player!");
+        System.out.println("The " + monsterType + " deals " + damage + " damage to you!");
     }
 
-    public void escapeAttack(Player player) {
-        // this differs from attack() in its console output
-        // it is called when a player chooses to run
-        // it is identical in all other ways
+    public void escapeAttack(Player target) {
+        target.onHit(damage);
+        System.out.println("The " + monsterType + " deals " + damage + " damage to you as you escape!");
     }
 
     public void onHit(int damage) {

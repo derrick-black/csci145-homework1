@@ -1,3 +1,6 @@
+import java.awt.*;
+import java.awt.geom.Point2D;
+
 // This class object represents a map of a dungeon for the DungeonGame class.
 // It contains an array of Room objects and keeps track of a Player object.
 // It also contains a method to create a visual representation of the map.
@@ -19,6 +22,15 @@ public class DungeonMap {
             case "Thief":
                 playerToken = 'T';
                 break;
+        }
+        initMap();
+    }
+
+    private void initMap() {
+        for(int i = 0; i < rooms.length; i++) {
+            for(int j = 0; j < rooms[i].length; j++) {
+                rooms[i][j] = new Room();
+            }
         }
     }
 
@@ -47,4 +59,24 @@ public class DungeonMap {
         }
         System.out.println();
     }
+
+    public Room movePlayer(int xDistance, int yDistance) {
+        Point newPosition = new Point(player.getX() + xDistance, player.getY() + yDistance);
+        Room currentPlayerRoom = null;
+
+        if(isValidPosition(newPosition)) {
+            player.setCoordinates(newPosition);
+            currentPlayerRoom = rooms[player.getY()][player.getX()];
+        } else {
+            System.out.println("There is a wall blocking your path.");
+            currentPlayerRoom = null;
+        }
+        return currentPlayerRoom;
+    }
+
+    public boolean isValidPosition(Point newPosition) {
+        return !(newPosition.getX() < 0) && !(newPosition.getY() < 0) &&
+                !(newPosition.getX() >= rooms[0].length) && !(newPosition.getY() >= rooms.length);
+    }
+
 }

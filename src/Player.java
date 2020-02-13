@@ -11,6 +11,7 @@ public class Player {
     public Player(String playerClass){
         gold = 0;
         coordinates = new Point (0, 0);
+        this.playerClass = playerClass;
         switch(playerClass){
             case "Warrior":
                 health = 100;
@@ -27,7 +28,7 @@ public class Player {
 
     public void attack(Monster target) {
         target.onHit(damage);
-        System.out.println("The player attacks the " + target.getType() + " dealing " + damage + " damage!");
+        System.out.println("You attack the " + target.getType() + " dealing " + damage + " damage!");
     }
 
     public void onHit(int damage) {
@@ -37,7 +38,7 @@ public class Player {
 
     public void onHeal(int health) {
         this.health += health;
-        System.out.println ("You found a healing potion that has restored your vigor, you gained" + health + "health. Your health is now " + this.health + " health!");
+        System.out.println ("You found a healing potion that has restored your vigor, you gained " + health + " health. Your health is now " + this.health + " health!");
     }
 
     public void onLoot(int gold) {
@@ -52,6 +53,10 @@ public class Player {
 
     public void setCoordinates(int x, int y) {
         coordinates.setLocation(x, y);
+    }
+
+    public void setCoordinates(Point newPosition) {
+        coordinates.setLocation(newPosition);
     }
 
     // accessor methods
@@ -74,5 +79,9 @@ public class Player {
 
     public int getY() {
         return (int)coordinates.getY();
+    }
+
+    public Point getCoordinates() {
+        return coordinates;
     }
 }

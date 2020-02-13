@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7373462e-3c5c-451f-8602-5d1f91c35c22" name="Default Changelist" comment="Added description at heading of Room and DungeonMap classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DungeonGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DungeonGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DungeonMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DungeonMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,14 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="csci145-homework1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDungeonMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestDungeonMap" />
       <module name="csci145-homework1" />
@@ -55,6 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestDungeonMap" />
       </list>
     </recent_temporary>
@@ -128,11 +140,35 @@
       <option name="project" value="LOCAL" />
       <updated>1581379943642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed use of Point to Point2D to follow in-class instructions">
+      <created>1581569687963</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581569687963</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Revert &quot;Changed use of Point to Point2D to follow in-class instructions&quot;&#10;&#10;This reverts commit 9eecc77d">
+      <created>1581570274258</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581570274258</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -155,63 +191,76 @@
     <MESSAGE value="Added coordinates to Player.java, along with mutator and accessor" />
     <MESSAGE value="Added description at heading of Room and DungeonMap classes" />
     <MESSAGE value="Filled the Methods of the Player Class, print statement for Monster damage still needed in Monster.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filled the Methods of the Player Class, print statement for Monster damage still needed in Monster.java" />
+    <MESSAGE value="Changed use of Point to Point2D to follow in-class instructions" />
+    <MESSAGE value="Revert &quot;Changed use of Point to Point2D to follow in-class instructions&quot;&#10;&#10;This reverts commit 9eecc77d" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Changed use of Point to Point2D to follow in-class instructions&quot;&#10;&#10;This reverts commit 9eecc77d" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1580750432544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1580750432544" />
-    <state x="329" y="50" width="1086" height="770" key="CommitChangelistDialog2" timestamp="1581457645110">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state x="395" y="60" width="1086" height="770" key="CommitChangelistDialog2" timestamp="1581570273793">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="329" y="50" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1581457645110" />
     <state x="369" y="47" width="1086" height="770" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580780273301" />
+    <state x="395" y="60" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581570273793" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1580751630633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580751630633" />
-    <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1580782822671">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="414" key="GridCell.Tab.0.bottom" timestamp="1581573447275">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580782822671" />
-    <state width="1342" height="195" key="GridCell.Tab.0.center" timestamp="1580782822671">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="414" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573447275" />
+    <state width="1340" height="414" key="GridCell.Tab.0.center" timestamp="1581573447275">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580782822671" />
-    <state width="1342" height="195" key="GridCell.Tab.0.left" timestamp="1580782822670">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="414" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573447275" />
+    <state width="1340" height="414" key="GridCell.Tab.0.left" timestamp="1581573447275">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580782822670" />
-    <state width="1342" height="195" key="GridCell.Tab.0.right" timestamp="1580782822671">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="414" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573447275" />
+    <state width="1340" height="414" key="GridCell.Tab.0.right" timestamp="1581573447275">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580782822671" />
-    <state width="1342" height="242" key="GridCell.Tab.1.bottom" timestamp="1580781865358">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="414" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573447275" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1581573172493">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580781865358" />
-    <state width="1342" height="242" key="GridCell.Tab.1.center" timestamp="1580781865358">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573172493" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1581573172493">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1580781865358" />
-    <state width="1342" height="242" key="GridCell.Tab.1.left" timestamp="1580781865358">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573172493" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1581573172493">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1580781865358" />
-    <state width="1342" height="242" key="GridCell.Tab.1.right" timestamp="1580781865358">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573172493" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1581573172493">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1342" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1580781865358" />
-    <state x="506" y="124" key="RollbackChangesDialog" timestamp="1580782849100">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581573172493" />
+    <state x="633" y="157" key="RollbackChangesDialog" timestamp="1581570235102">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="506" y="124" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580782849100" />
-    <state x="322" y="155" key="Vcs.Push.Dialog.v2" timestamp="1581379949361">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state x="633" y="157" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581570235102" />
+    <state x="452" y="185" key="Vcs.Push.Dialog.v2" timestamp="1581570284457">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="322" y="155" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1581379949361" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580780276838" />
+    <state x="452" y="185" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581570284457" />
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580780352373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -236,6 +285,11 @@
           <url>file://$PROJECT_DIR$/src/TestDungeonMap.java</url>
           <line>1</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DungeonMap.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
