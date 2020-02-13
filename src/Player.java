@@ -2,6 +2,7 @@ import java.awt.*;
 
 public class Player {
     private int health;
+    private int maxHealth;
     private int gold;
     private int damage;
     private String playerClass;
@@ -24,6 +25,7 @@ public class Player {
                 damage = 10;
                 break;
         }
+        maxHealth = health;
     }
 
     public void attack(Monster target) {
@@ -38,6 +40,9 @@ public class Player {
 
     public void onHeal(int health) {
         this.health += health;
+        if (health > maxHealth) {
+            health = maxHealth;
+        }
         System.out.println ("You found a healing potion that has restored your vigor, you gained " + health + " health. Your health is now " + this.health + " health!");
     }
 
