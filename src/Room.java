@@ -50,8 +50,9 @@ public class Room {
     // runCombat
     // runs combat using the inputted player stats, ending combat when either one reaches zero health
     private void runCombat(Player player) {
-        int action;
+        Random r = new Random();
         Monster foe = new Monster();
+        int maxLoot = foe.getHealth();
         System.out.println("You open a door and move through ...");
         System.out.println("A " + foe.getType() + " appears!!\n");
         while (foe.getHealth() > 0 && player.getHealth() > 0) {
@@ -65,12 +66,13 @@ public class Room {
                 case 2:
                     System.out.println("You try to run ...");
                     foe.escapeAttack(player);
-                    break;
+                    return;
             }
         }
 
         if (foe.getHealth() < 1) {
             System.out.println("The " + foe.getType() + " dies!");
+            player.onLoot(r.nextInt(maxLoot));
         }
     }
 

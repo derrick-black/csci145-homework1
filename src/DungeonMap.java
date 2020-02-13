@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.geom.Point2D;
 
 // This class object represents a map of a dungeon for the DungeonGame class.
 // It contains an array of Room objects and keeps track of a Player object.
@@ -7,8 +6,10 @@ import java.awt.geom.Point2D;
 public class DungeonMap {
     private Room[][] rooms;
     private Player player;
-    private final String WALL_MAP_POSITION = "*";
+    private final String WALL_MAP_POSITION = "|";
+    private final String CEILING_FLOOR_MAP_POSITION = "-";
     private final String EMPTY_MAP_POSITION = " ";
+    private final String VISITED_MAP_POSITION = "*";
     private char playerToken;
 
 
@@ -32,12 +33,13 @@ public class DungeonMap {
                 rooms[i][j] = new Room();
             }
         }
+        rooms[0][0].enter(player);
     }
 
     public void print() {
 
         for (int i = 0; i < rooms.length + 2; i++) {
-            System.out.print("*");
+            System.out.print(CEILING_FLOOR_MAP_POSITION);
         }
         System.out.println();
 
@@ -47,7 +49,9 @@ public class DungeonMap {
                 if (player.getY() == i && player.getX() == j) {
                     System.out.print(playerToken);
                 }
-                else {
+                else if (rooms[i][j].hasVisited()){
+                    System.out.print(VISITED_MAP_POSITION);
+                } else {
                     System.out.print(EMPTY_MAP_POSITION);
                 }
             }
@@ -55,7 +59,7 @@ public class DungeonMap {
         }
 
         for (int i = 0; i < rooms.length + 2; i++) {
-            System.out.print("*");
+            System.out.print(CEILING_FLOOR_MAP_POSITION);
         }
         System.out.println();
     }

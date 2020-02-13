@@ -43,7 +43,7 @@ public class Player {
 
     public void onLoot(int gold) {
         this.gold += (gold * lootModifier);
-        System.out.println("You found " + gold + " gold! You now have " + this.gold + "gold!");
+        System.out.println("You found " + gold + " gold! You now have " + this.gold + " gold!");
         if (this.gold < 100) {
             System.out.println ("Only " + (100 - this.gold) + " gold left!");
         }
