@@ -41,12 +41,12 @@ public class Room {
         // Player finds a healing elixir
         else if (encounter < 89) {
             loot = r.nextInt(25);
-            player.onHeal(loot);
+            player.onHeal(loot + 1);
         }
         // Player finds a bag of gold
         else {
             loot = r.nextInt(30);
-            player.onLoot(loot);
+            player.onLoot(loot + 1);
         }
         this.visited = true;
     }

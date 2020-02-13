@@ -39,11 +39,16 @@ public class Player {
     }
 
     public void onHeal(int health) {
+        int oldHealth = this.health;
         this.health += health;
-        if (health > maxHealth) {
-            health = maxHealth;
+        if (this.health > maxHealth) {
+            this.health = maxHealth;
         }
-        System.out.println ("You found a healing potion that has restored your vigor, you gained " + health + " health. Your health is now " + this.health + " health!");
+        if (this.health - oldHealth == 0) {
+            System.out.println("You found a healing potion, but you were already at full health!");
+        } else {
+            System.out.println("You found a healing potion that has restored your vigor, you gained " + (this.health - oldHealth) + " health. Your health is now " + this.health + " health!");
+        }
     }
 
     public void onLoot(int gold) {

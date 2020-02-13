@@ -37,7 +37,6 @@ public class DungeonMap {
     }
 
     public void print() {
-
         for (int i = 0; i < rooms.length + 2; i++) {
             System.out.print(CEILING_FLOOR_MAP_POSITION);
         }
