@@ -4,6 +4,7 @@ public class Monster {
     private int health;
     private int damage;
     private String monsterType;
+    private Random r = new Random();
 
     public Monster(){
         Random choice_generator = new Random();
@@ -33,12 +34,12 @@ public class Monster {
     }
 
     public void attack(Player target) {
-        target.onHit(damage);
+        target.onHit(r.nextInt(damage + 1));
         System.out.println("The " + monsterType + " deals " + damage + " damage to you!");
     }
 
     public void escapeAttack(Player target) {
-        target.onHit(damage);
+        target.onHit(r.nextInt(damage + 1));
         System.out.println("The " + monsterType + " deals " + damage + " damage to you as you escape!");
     }
 

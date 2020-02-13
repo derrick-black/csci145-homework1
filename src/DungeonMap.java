@@ -33,7 +33,7 @@ public class DungeonMap {
                 rooms[i][j] = new Room();
             }
         }
-        rooms[0][0].enter(player);
+        rooms[0][0].setVisited(true);
     }
 
     public void print() {
@@ -66,7 +66,7 @@ public class DungeonMap {
 
     public Room movePlayer(int xDistance, int yDistance) {
         Point newPosition = new Point(player.getX() + xDistance, player.getY() + yDistance);
-        Room currentPlayerRoom = null;
+        Room currentPlayerRoom;
 
         if(isValidPosition(newPosition)) {
             player.setCoordinates(newPosition);

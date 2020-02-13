@@ -24,6 +24,10 @@ public class Room {
         return this.visited;
     }
 
+    public void setVisited(boolean visited) {
+        this.visited = visited;
+    }
+
     // runEncounter
     // runs an encounter with the given player, randomly choosing from
     // a monster combat, finding a health elixir, and finding a bag of gold
