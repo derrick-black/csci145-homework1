@@ -5,8 +5,6 @@ public class DungeonGame {
     private Player player;
 	private int width;
 	private int height;
-	private int x=0;
-	private int y=0;
 
     public DungeonGame(int width, int height){
 		this.width=width;
@@ -39,49 +37,57 @@ public class DungeonGame {
 	}
 
     public void play() {
+    	playIntro();
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Select your class:\n[1] Warrior\n[2] Thief");
 		int playerClass = getInt(scan);
 		String[] classes = {"Warrior", "Thief"};
 		player = new Player(classes[playerClass-1]);
-		player.setCoordinates(x,y);
 		map = new DungeonMap(width,height,player);
+		Room currentPlayerRoom = null;
+
 		boolean running=true;
 		while(running){
 			map.print();
 			System.out.println("GP = "+player.getGold());
 			System.out.println("HP = "+player.getHealth());
-			boolean cantMove=false;
 			char choice;
-			do{
-				cantMove=false;
-				System.out.print("\nSelect a door: [W] up, [S] down, [A] left, [D] right ==> ");
-				choice = getChar(scan);
-				if(y==0 && choice=='w') cantMove=true;
-				if(y==height-1 && choice=='s') cantMove=true;
-				if(x==0 && choice=='a') cantMove=true;
-				if(x==width-1 && choice=='d') cantMove=true;
-				if(cantMove) System.out.println("There is a wall blocking your path.");
-			}while(cantMove);
-			if(choice=='w'){
-				y--;
-			}else if(choice=='s'){
-				y++;
-			}else if(choice=='a'){
-				x--;
-			}else if(choice=='d'){
-				x++;
+			System.out.print("\nSelect a door: [W] up, [S] down, [A] left, [D] right ==> ");
+			choice = getChar(scan);
+			switch (choice) {
+				case 'w':
+					currentPlayerRoom = map.movePlayer(0,-1);
+					break;
+				case 's':
+					currentPlayerRoom = map.movePlayer(0, 1);
+					break;
+				case 'a':
+					currentPlayerRoom = map.movePlayer(-1, 0);
+					break;
+				case 'd':
+					currentPlayerRoom = map.movePlayer(1,0);
+					break;
 			}
-			player.setCoordinates(x,y);
-			map.enterRoom();
+			if(currentPlayerRoom != null) {
+				currentPlayerRoom.enter(player);
+			}
+
 			if(player.getHealth()<=0){
 				System.out.println("Your hp hit 0. You died.");
 				running=false;
 			}
+			map.allVisited();
 			if(player.getGold()>=100){
 				System.out.println("You have successfully exited the dungeon. Congratulations!!");
 				running=false;
 			}
 		}
     }
+
+    private void playIntro() {
+    	System.out.println("Oh no! You've been captured by the evil professor and awoken in his dungeon!");
+    	System.out.println("To escape, you must find 100 gold before you run out of health to pay the doorman!");
+    	System.out.println("In each room, you'll face monsters, loot gold, and recover from healing elixirs!");
+    	System.out.println("Good luck, adventurer!\n");
+	}
 }

@@ -4,11 +4,11 @@ public class Monster {
     private int health;
     private int damage;
     private String monsterType;
-    private int monsterChoice;
+    private Random r = new Random();
 
     public Monster(){
         Random choice_generator = new Random();
-        monsterChoice = choice_generator.nextInt(4);
+        int monsterChoice = choice_generator.nextInt(4);
         switch(monsterChoice) {
             case 0:
                 monsterType = "Deneke";
@@ -34,14 +34,15 @@ public class Monster {
     }
 
     public void attack(Player target) {
-        target.onHit(damage);
-        System.out.println("The " + monsterType + "deals " + damage + "damage to the player!");
+        int hitDamage = r.nextInt(damage + 1);
+        target.onHit(hitDamage);
+        System.out.println("The " + monsterType + " deals " + hitDamage + " damage to you!");
     }
 
-    public void escapeAttack(Player player) {
-        // this differs from attack() in its console output
-        // it is called when a player chooses to run
-        // it is identical in all other ways
+    public void escapeAttack(Player target) {
+        int hitDamage = r.nextInt(damage + 1);
+        target.onHit(hitDamage);
+        System.out.println("The " + monsterType + " deals " + hitDamage + " damage to you as you escape!");
     }
 
     public void onHit(int damage) {

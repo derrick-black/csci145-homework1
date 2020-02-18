@@ -13,14 +13,19 @@ public class Room {
         if(!visited) {
             runEncounter(player);
             visited = true;
+        } else {
+            System.out.println("You have already visited this room...");
         }
-        System.out.println("You have already visited this room...");
     }
 
     // hasVisited
     // returns whether a room has already been visited
     public boolean hasVisited() {
         return this.visited;
+    }
+
+    public void setVisited(boolean visited) {
+        this.visited = visited;
     }
 
     // runEncounter
@@ -36,12 +41,12 @@ public class Room {
         // Player finds a healing elixir
         else if (encounter < 89) {
             loot = r.nextInt(25);
-            player.onHeal(loot);
+            player.onHeal(loot + 1);
         }
         // Player finds a bag of gold
         else {
             loot = r.nextInt(30);
-            player.onLoot(loot);
+            player.onLoot(loot + 1);
         }
         this.visited = true;
     }
@@ -49,8 +54,9 @@ public class Room {
     // runCombat
     // runs combat using the inputted player stats, ending combat when either one reaches zero health
     private void runCombat(Player player) {
-        int action;
+        Random r = new Random();
         Monster foe = new Monster();
+        int maxLoot = foe.getHealth();
         System.out.println("You open a door and move through ...");
         System.out.println("A " + foe.getType() + " appears!!\n");
         while (foe.getHealth() > 0 && player.getHealth() > 0) {
@@ -64,12 +70,13 @@ public class Room {
                 case 2:
                     System.out.println("You try to run ...");
                     foe.escapeAttack(player);
-                    break;
+                    return;
             }
         }
 
         if (foe.getHealth() < 1) {
             System.out.println("The " + foe.getType() + " dies!");
+            player.onLoot(r.nextInt(maxLoot));
         }
     }
 
