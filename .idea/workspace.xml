@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7373462e-3c5c-451f-8602-5d1f91c35c22" name="Default Changelist" comment="Added description at heading of Room and DungeonMap classes">
+    <list default="true" id="7373462e-3c5c-451f-8602-5d1f91c35c22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="csci145-homework1" />
+      <option name="PROGRAM_PARAMETERS" value="5 10" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -60,6 +60,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.TestDungeonMap" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -199,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581575417232</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Console now prints the actual damage done to the player, not the max monster damage">
+      <created>1582082349964</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1582082349964</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,18 +257,23 @@
     <MESSAGE value="Capped player HP so player cannot heal over max HP" />
     <MESSAGE value="Added intro" />
     <MESSAGE value="Updated intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated intro" />
+    <MESSAGE value="Console now prints the actual damage done to the player, not the max monster damage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Console now prints the actual damage done to the player, not the max monster damage" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1580750432544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1580750432544" />
-    <state x="350" y="139" width="1086" height="770" key="CommitChangelistDialog2" timestamp="1581575416777">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582082585153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582082585153" />
+    <state x="369" y="47" width="1086" height="770" key="CommitChangelistDialog2" timestamp="1582082349033">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="329" y="50" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1581457645110" />
-    <state x="369" y="47" width="1086" height="770" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580780273301" />
+    <state x="369" y="47" width="1086" height="770" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582082349033" />
     <state x="350" y="139" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581575416777" />
     <state x="0" y="116" key="DiffContextDialog" timestamp="1581575110192">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -267,25 +283,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580751630633" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1582082096831">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1582082744570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582082096831" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582082744570" />
     <state width="1340" height="443" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581576354681" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1582082096830">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1582082744569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582082096830" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582082744569" />
     <state width="1340" height="443" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581576354681" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1582082096829">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1582082744569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582082096829" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582082744569" />
     <state width="1340" height="443" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581576354681" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1582082096831">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1582082744570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582082096831" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582082744570" />
     <state width="1340" height="443" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581576354681" />
     <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1581576179610">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -312,11 +328,11 @@
     </state>
     <state x="506" y="124" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580782849100" />
     <state x="633" y="157" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581570235102" />
-    <state x="452" y="185" key="Vcs.Push.Dialog.v2" timestamp="1581575826261">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1582082352239">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="322" y="155" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1581379949361" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580780276838" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582082352239" />
     <state x="452" y="185" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581575826261" />
     <state x="723" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581573545656">
       <screen x="0" y="0" width="1920" height="1040" />

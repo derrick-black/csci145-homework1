@@ -37,7 +37,7 @@ public class DungeonMap {
     }
 
     public void print() {
-        for (int i = 0; i < rooms.length + 2; i++) {
+        for (int i = 0; i < rooms[0].length + 2; i++) {
             System.out.print(CEILING_FLOOR_MAP_POSITION);
         }
         System.out.println();
@@ -57,7 +57,7 @@ public class DungeonMap {
             System.out.println(WALL_MAP_POSITION);
         }
 
-        for (int i = 0; i < rooms.length + 2; i++) {
+        for (int i = 0; i < rooms[0].length + 2; i++) {
             System.out.print(CEILING_FLOOR_MAP_POSITION);
         }
         System.out.println();
