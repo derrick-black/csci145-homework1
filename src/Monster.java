@@ -34,13 +34,15 @@ public class Monster {
     }
 
     public void attack(Player target) {
-        target.onHit(r.nextInt(damage + 1));
-        System.out.println("The " + monsterType + " deals " + damage + " damage to you!");
+        int hitDamage = r.nextInt(damage + 1);
+        target.onHit(hitDamage);
+        System.out.println("The " + monsterType + " deals " + hitDamage + " damage to you!");
     }
 
     public void escapeAttack(Player target) {
-        target.onHit(r.nextInt(damage + 1));
-        System.out.println("The " + monsterType + " deals " + damage + " damage to you as you escape!");
+        int hitDamage = r.nextInt(damage + 1);
+        target.onHit(hitDamage);
+        System.out.println("The " + monsterType + " deals " + hitDamage + " damage to you as you escape!");
     }
 
     public void onHit(int damage) {
