@@ -82,4 +82,16 @@ public class DungeonMap {
                 !(newPosition.getX() >= rooms[0].length) && !(newPosition.getY() >= rooms.length);
     }
 
+    public void allVisited() {
+        for (int i = 0; i < rooms.length; i++) {
+            for (int j = 0; j < rooms[i].length; j++) {
+                if (!rooms[i][j].hasVisited()) {
+                    return;
+                }
+            }
+        }
+        System.out.println("You've explored the entire dungeon and discovered a chest of loot in the final room!");
+        player.onLoot(1000);
+    }
+
 }

@@ -76,6 +76,7 @@ public class DungeonGame {
 				System.out.println("Your hp hit 0. You died.");
 				running=false;
 			}
+			map.allVisited();
 			if(player.getGold()>=100){
 				System.out.println("You have successfully exited the dungeon. Congratulations!!");
 				running=false;
